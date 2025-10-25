@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AWS DevOps Portfolio - K. Pavan Kumar</title>
+  <meta name="description" content="AWS DevOps Portfolio showcasing CI/CD, IaC, monitoring, automation, projects and contact." />
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom styles to complement Tailwind */
+    .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(6px); }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Courier New', monospace; }
+    pre code { display: block; padding: 1rem; overflow:auto; border-radius: .5rem; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-slate-100 min-h-screen">
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <div class="w-12 h-12 rounded-lg bg-gradient-to-tr from-amber-400 to-rose-500 flex items-center justify-center font-bold text-slate-900">PK</div>
+      <div>
+        <h1 class="text-xl font-semibold">K. Pavan Kumar</h1>
+        <p class="text-sm text-slate-300">AWS DevOps Engineer • Infrastructure as Code • CI/CD • Observability</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <button id="themeBtn" class="px-3 py-1 rounded-md bg-slate-700 text-sm">Toggle Theme</button>
+      <a id="resumeBtn" class="px-3 py-1 rounded-md bg-amber-500 text-slate-900 text-sm cursor-pointer">Download Resume</a>
+      <a href="#contact" class="px-3 py-1 rounded-md border border-slate-600 text-sm">Contact</a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto p-6 grid gap-8">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 items-center gap-8">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-extrabold">AWS DevOps Engineer</h2>
+        <p class="text-slate-300">I design scalable, secure and highly-available cloud infrastructure on AWS, automate deployments with CI/CD pipelines, and build observability and cost-optimised systems.</p>
+
+        <div class="flex gap-3 flex-wrap">
+          <a href="#projects" class="px-4 py-2 rounded-md bg-rose-500 text-slate-900 font-semibold">View Projects</a>
+          <a href="https://github.com/" target="_blank" class="px-4 py-2 rounded-md border border-slate-600">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" class="px-4 py-2 rounded-md border border-slate-600">LinkedIn</a>
+        </div>
+
+        <div class="mt-4 bg-slate-800 p-4 rounded-lg glass">
+          <h3 class="font-semibold">Key highlights</h3>
+          <ul class="list-disc ml-5 mt-2 text-slate-300">
+            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+            <li>CI/CD (Jenkins, GitHub Actions, CodePipeline)</li>
+            <li>Containerization & Orchestration (Docker, EKS)</li>
+            <li>Monitoring & Observability (CloudWatch, Prometheus, Grafana)</li>
+            <li>Security & Cost Optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-xl glass">
+        <h3 class="text-lg font-semibold">Quick Technical Snapshot</h3>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div class="space-y-2">
+            <p class="text-sm text-slate-300">Cloud</p>
+            <p class="font-medium">AWS (EC2, S3, VPC, RDS, EKS, Lambda)</p>
+          </div>
+          <div class="space-y-2">
+            <p class="text-sm text-slate-300">IaC</p>
+            <p class="font-medium">Terraform • CloudFormation • AWS CDK</p>
+          </div>
+          <div class="space-y-2">
+            <p class="text-sm text-slate-300">CI/CD</p>
+            <p class="font-medium">Jenkins • GitHub Actions • AWS CodePipeline</p>
+          </div>
+          <div class="space-y-2">
+            <p class="text-sm text-slate-300">Monitoring</p>
+            <p class="font-medium">CloudWatch • Prometheus • Grafana</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="bg-slate-800 p-6 rounded-xl glass">
+      <h3 class="text-xl font-semibold">Skills & Tools</h3>
+      <div class="grid md:grid-cols-3 gap-4 mt-4">
+        <div>
+          <h4 class="font-medium">Cloud & Infra</h4>
+          <p class="text-sm text-slate-300">AWS (VPC, EC2, S3, RDS, IAM, Lambda, EKS, ECR, CloudFront)</p>
+        </div>
+        <div>
+          <h4 class="font-medium">CI/CD & Automation</h4>
+          <p class="text-sm text-slate-300">Git, Jenkins, GitHub Actions, CodePipeline, Ansible, Terragrunt</p>
+        </div>
+        <div>
+          <h4 class="font-medium">IaC & Containers</h4>
+          <p class="text-sm text-slate-300">Terraform, CloudFormation, Docker, Kubernetes (EKS)</p>
+        </div>
+        <div>
+          <h4 class="font-medium">Monitoring & Logging</h4>
+          <p class="text-sm text-slate-300">CloudWatch, Prometheus, Grafana, ELK Stack, Datadog</p>
+        </div>
+        <div>
+          <h4 class="font-medium">Security & Compliance</h4>
+          <p class="text-sm text-slate-300">IAM Policies, KMS, Secrets Manager, Security Groups, CIS Benchmarks</p>
+        </div>
+        <div>
+          <h4 class="font-medium">Languages & Dev</h4>
+          <p class="text-sm text-slate-300">Bash, Python, Node.js, Go, Git</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-semibold">Selected Projects</h3>
+        <div class="flex gap-2">
+          <button class="px-3 py-1 rounded-md border" data-filter="all">All</button>
+          <button class="px-3 py-1 rounded-md border" data-filter="iac">IaC</button>
+          <button class="px-3 py-1 rounded-md border" data-filter="cicd">CI/CD</button>
+          <button class="px-3 py-1 rounded-md border" data-filter="k8s">Kubernetes</button>
+        </div>
+      </div>
+
+      <div id="projectsGrid" class="grid md:grid-cols-3 gap-4">
+        <!-- Project Card Template -->
+        <article class="p-4 rounded-xl bg-slate-800 glass" data-type="iac">
+          <h4 class="font-semibold">Automated VPC & EKS with Terraform</h4>
+          <p class="text-sm text-slate-300 mt-2">End-to-end Terraform module that provisions VPC, EKS cluster, nodegroups, and integrates with IAM, ALB and ECR.</p>
+          <div class="mt-4 flex items-center gap-2">
+            <a class="text-sm px-3 py-1 rounded-md bg-amber-500 text-slate-900" href="#" data-demo>Demo</a>
+            <a class="text-sm px-3 py-1 rounded-md border" href="#" data-code>View Code</a>
+            <span class="ml-auto text-xs text-slate-400">Terraform • AWS</span>
+          </div>
+        </article>
+
+        <article class="p-4 rounded-xl bg-slate-800 glass" data-type="cicd">
+          <h4 class="font-semibold">CI/CD with GitHub Actions & ECR → EKS</h4>
+          <p class="text-sm text-slate-300 mt-2">GitHub Actions workflow that builds Docker images, pushes to ECR and deploys to EKS using kubectl and Helm.</p>
+          <div class="mt-4 flex items-center gap-2">
+            <a class="text-sm px-3 py-1 rounded-md bg-amber-500 text-slate-900" href="#" data-demo>Demo</a>
+            <a class="text-sm px-3 py-1 rounded-md border" href="#" data-code>View Code</a>
+            <span class="ml-auto text-xs text-slate-400">GitHub Actions • Docker • Helm</span>
+          </div>
+        </article>
+
+        <article class="p-4 rounded-xl bg-slate-800 glass" data-type="k8s">
+          <h4 class="font-semibold">Blue/Green & Canary Deployments</h4>
+          <p class="text-sm text-slate-300 mt-2">Implementing progressive delivery using Argo Rollouts and service mesh patterns on EKS.</p>
+          <div class="mt-4 flex items-center gap-2">
+            <a class="text-sm px-3 py-1 rounded-md bg-amber-500 text-slate-900" href="#" data-demo>Demo</a>
+            <a class="text-sm px-3 py-1 rounded-md border" href="#" data-code>View Code</a>
+            <span class="ml-auto text-xs text-slate-400">Argo • EKS</span>
+          </div>
+        </article>
+
+        <article class="p-4 rounded-xl bg-slate-800 glass" data-type="iac">
+          <h4 class="font-semibold">Serverless Event-driven Pipeline</h4>
+          <p class="text-sm text-slate-300 mt-2">S3 → Lambda → SNS pipeline for ingestion and processing with IaC and automated tests.</p>
+          <div class="mt-4 flex items-center gap-2">
+            <a class="text-sm px-3 py-1 rounded-md bg-amber-500 text-slate-900" href="#" data-demo>Demo</a>
+            <a class="text-sm px-3 py-1 rounded-md border" href="#" data-code>View Code</a>
+            <span class="ml-auto text-xs text-slate-400">Serverless • Lambda</span>
+          </div>
+        </article>
+
+        <!-- Add more cards as necessary -->
+      </div>
+    </section>
+
+    <!-- Example snippets & Templates -->
+    <section class="bg-slate-800 p-6 rounded-xl glass">
+      <h3 class="text-lg font-semibold">Ready-to-use Snippets</h3>
+
+      <div class="mt-4 grid md:grid-cols-2 gap-4">
+        <div>
+          <h4 class="font-medium">GitHub Actions (build & push to ECR)</h4>
+          <pre class="bg-slate-900 rounded-md"><code class="mono">name: Build and Push
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Login to ECR
+      uses: aws-actions/amazon-ecr-login@v1
+    - name: Build and push
+      run: |
+        docker build -t ${{ secrets.ECR_REPO }}:${{ github.sha }} .
+        docker tag ${{ secrets.ECR_REPO }}:${{ github.sha }} ${{ secrets.ECR_REPO }}:latest
+        docker push ${{ secrets.ECR_REPO }}:${{ github.sha }}
+</code></pre>
+        </div>
+
+        <div>
+          <h4 class="font-medium">Terraform: S3 bucket with versioning</h4>
+          <pre class="bg-slate-900 rounded-md"><code class="mono">resource "aws_s3_bucket" "artifact" {
+  bucket = "my-artifacts-bucket-${var.env}"
+  versioning { enabled = true }
+  server_side_encryption_configuration { ... }
+}
+</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process / How I work -->
+    <section class="p-6 rounded-xl bg-slate-800 glass">
+      <h3 class="text-xl font-semibold">How I Work</h3>
+      <ol class="list-decimal ml-5 mt-3 text-slate-300">
+        <li>Discover & Design — Requirements, cost & security considerations.</li>
+        <li>Architect — Infrastructure diagrams, Terraform modules, VPC design.</li>
+        <li>Implement — Automated CI/CD, automated tests, deployment strategies.</li>
+        <li>Operate — Monitoring, incident runbooks, SLO/SLI setup.</li>
+        <li>Improve — Cost optimization, refactor IaC, automate more.</li>
+      </ol>
+    </section>
+
+    <!-- Timeline / Certifications -->
+    <section class="grid md:grid-cols-2 gap-4">
+      <div class="bg-slate-800 p-6 rounded-xl glass">
+        <h3 class="text-lg font-semibold">Certifications</h3>
+        <ul class="mt-3 text-slate-300 space-y-2">
+          <li>AWS Certified Solutions Architect – Associate</li>
+          <li>AWS Certified DevOps Engineer – Professional</li>
+          <li>HashiCorp Certified: Terraform Associate</li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-800 p-6 rounded-xl glass">
+        <h3 class="text-lg font-semibold">Experience Timeline</h3>
+        <div class="mt-3 text-slate-300">
+          <p><strong>2023 – Present:</strong> Cloud Engineer / DevOps — projects in infra automation and platform engineering.</p>
+          <p class="mt-2"><strong>2021 – 2023:</strong> SRE & Build Automation — CI/CD, monitoring, incident management.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-800 p-6 rounded-xl glass">
+      <h3 class="text-xl font-semibold">Contact & Hire</h3>
+      <p class="text-slate-300">Interested in working together? Reach out — available for full-time roles and freelance engagements.</p>
+
+      <form id="contactForm" class="mt-4 grid md:grid-cols-2 gap-4">
+        <input type="text" id="name" placeholder="Your name" class="p-3 rounded-md bg-slate-900" required />
+        <input type="email" id="email" placeholder="Your email" class="p-3 rounded-md bg-slate-900" required />
+        <input type="text" id="company" placeholder="Company (optional)" class="p-3 rounded-md bg-slate-900" />
+        <textarea id="message" placeholder="How can I help?" class="p-3 rounded-md bg-slate-900" required></textarea>
+        <div class="md:col-span-2 flex gap-3">
+          <button type="submit" class="px-4 py-2 rounded-md bg-amber-500 text-slate-900">Send</button>
+          <button id="copyEmail" type="button" class="px-4 py-2 rounded-md border">Copy Email</button>
+        </div>
+      </form>
+
+      <p class="mt-3 text-sm text-slate-400">Email: <span id="emailText">pavankumarkasula73@gmail.com</span></p>
+    </section>
+
+    <footer class="text-center text-slate-400 py-6">© <span id="year"></span> K. Pavan Kumar — Built with HTML, TailwindCSS & JavaScript</footer>
+  </main>
+
+  <!-- Modal for code / demo (simple) -->
+  <div id="modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 p-4">
+    <div class="bg-slate-900 rounded-lg max-w-4xl w-full p-4">
+      <div class="flex items-start justify-between">
+        <h4 id="modalTitle" class="font-semibold">Details</h4>
+        <button id="closeModal" class="px-2 py-1 rounded-md border">Close</button>
+      </div>
+      <div id="modalBody" class="mt-4 text-slate-300 mono"></div>
+    </div>
+  </div>
+
+  <script>
+    // Small JS to power theme, resume download, project filter, modal, contact form
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle (light/dark)
+    const themeBtn = document.getElementById('themeBtn');
+    let light = false;
+    themeBtn.addEventListener('click', () => {
+      light = !light;
+      if (light) document.documentElement.classList.add('light');
+      else document.documentElement.classList.remove('light');
+      document.body.classList.toggle('text-slate-900');
+      document.body.classList.toggle('bg-white');
+    });
+
+    // Download resume (simple generated text file - replace with real PDF link if available)
+    document.getElementById('resumeBtn').addEventListener('click', () => {
+      const resume = `K. Pavan Kumar\nAWS DevOps Engineer\nEmail: pavankumarkasula73@gmail.com\n\nSummary:\nExperienced AWS DevOps engineer... (replace with your full resume)\n`;
+      const blob = new Blob([resume], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'PavanKumar_Resume.txt';
+      document.body.appendChild(a); a.click(); a.remove();
+      URL.revokeObjectURL(url);
+    });
+
+    // Project filter
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const f = btn.getAttribute('data-filter');
+        document.querySelectorAll('#projectsGrid article').forEach(card => {
+          if (f === 'all' || card.dataset.type === f) card.classList.remove('hidden');
+          else card.classList.add('hidden');
+        });
+      });
+    });
+
+    // Modal open for code/demo
+    const modal = document.getElementById('modal');
+    const modalBody = document.getElementById('modalBody');
+    const modalTitle = document.getElementById('modalTitle');
+    document.querySelectorAll('[data-code]').forEach((el, i) => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalTitle.textContent = 'Code snippet - Project ' + (i+1);
+        modalBody.textContent = 'Loading snippet...\n\n(Replace with your repository link or embed real code here)';
+        modal.classList.remove('hidden');
+      });
+    });
+    document.querySelectorAll('[data-demo]').forEach((el, i) => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        modalTitle.textContent = 'Live demo (placeholder)';
+        modalBody.textContent = 'Demo URL: https://example.com (replace with your actual demo)';
+        modal.classList.remove('hidden');
+      });
+    });
+    document.getElementById('closeModal').addEventListener('click', () => modal.classList.add('hidden'));
+
+    // Copy email
+    document.getElementById('copyEmail').addEventListener('click', () => {
+      navigator.clipboard.writeText(document.getElementById('emailText').textContent);
+      alert('Email copied to clipboard');
+    });
+
+    // Contact form handler (simple local feedback)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thanks! Your message was received. (This demo does not actually send emails.)');
+      e.target.reset();
+    });
+
+    // Keyboard: Esc to close modal
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') modal.classList.add('hidden'); });
+  </script>
+</body>
+</html>
